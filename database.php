@@ -1,0 +1,44 @@
+<?php
+
+  $db_server = "localhost";
+  $db_user = "root";
+  $db_pass = "";
+  $db_name = "businessdb";
+  $conn = "";
+
+
+  try {
+    $conn = mysqli_connect($db_server , $db_user, $db_pass, $db_name);
+  }catch(mysqli_sql_exception) {
+    echo "Could not connect!";
+  }
+  if($conn) {
+    echo "Your are connected!";
+  }
+
+  
+
+
+
+
+
+  // $db_server = "localhost";
+  // $db_user = "root";
+  // $db_pass = "";
+  // $db_name = "businessdb";
+  // $conn = "";
+
+  // if($conn) {
+  //   echo "You are connected!";
+  // }
+  // try {
+  //   $conn = mysqli_connect($db_server, $db_user, $db_pass,  $db_name);
+
+  // } catch(mysqli_sql_exception){
+  //   echo "Could not connect!";
+  // }
+  // if($conn) {
+  //   echo "You are connected!";
+  // }
+
+?>
